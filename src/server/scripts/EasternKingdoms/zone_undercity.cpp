@@ -132,7 +132,7 @@ public:
             {
                 if (Creature* target = Unit::GetCreature(*summoned, targetGUID))
                 {
-                    target->MonsterMoveWithSpeed(target->GetPositionX(), target->GetPositionY(), me->GetPositionZ()+15.0f, 0);
+                    target->MonsterMoveWithSpeed(target->GetPositionX(), target->GetPositionY(), me->GetPositionZ()+15, target->GetDistance(target->GetPositionX(), target->GetPositionY(), me->GetPositionZ()+15) / (5000 * 0.001f));
                     target->SetPosition(target->GetPositionX(), target->GetPositionY(), me->GetPositionZ()+15.0f, 0.0f);
                     summoned->CastSpell(target, SPELL_RIBBON_OF_SOULS, false);
                 }
