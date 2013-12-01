@@ -24,6 +24,9 @@ void AddSC_example_gossip_codebox();
 void AddSC_example_misc();
 void AddSC_example_commandscript();
 
+//TeleNPC2
+void AddSC_npc_teleport();
+
 // spells
 void AddSC_deathknight_spell_scripts();
 void AddSC_druid_spell_scripts();
@@ -1453,8 +1456,8 @@ void AddCustomScripts()
 #ifdef SCRIPTS
     /* This is where custom scripts should be added. */
 
-AddSC_CPWS_Transmogrification();
-//Bots
+    AddSC_CPWS_Transmogrification();
+    //Bots
     AddSC_death_knight_bot();
     AddSC_druid_bot();
     AddSC_hunter_bot();
@@ -1469,5 +1472,7 @@ AddSC_CPWS_Transmogrification();
     //advanced
     AddSC_BotQuests_chapter1();
     //end Bots
+    // TeleNPC2
+    AddSC_npc_teleport();
 #endif
 }
